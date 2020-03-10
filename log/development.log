@@ -1,0 +1,258 @@
+Started GET "/" for 10.0.2.2 at 2020-03-09 12:01:05 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (4.9ms)
+Completed 200 OK in 23ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2020-03-09 12:01:12 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (4.4ms)
+Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20200309120920)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20200309120920_devise_create_users.rb:5
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20200309120920_devise_create_users.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20200309120920_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200309120920"]]
+  ↳ bin/rails:9
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (9.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-09 12:11:39.869723"], ["updated_at", "2020-03-09 12:11:39.869723"]]
+  ↳ bin/rails:9
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 12:12:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/sessions/new.html.erb within layouts/application
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-03-09 12:31:01 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 953ms (Views: 916.6ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-03-09 12:31:28 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/devise-4.7.1/app/views/devise/registrations/new.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 124ms (Views: 122.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 12:34:54 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 493ms (Views: 461.6ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 12:38:41 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 493ms (ActiveRecord: 6.1ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    19:         <div class="container relative">
+    20:           <div class="navbar-header">
+    21:             <a class="navbar-logo" href="/">
+    22:               <%= image_tag('logo.png') %>
+    23:             </a>
+    24:    
+    25:             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___467084752471138551_45741260'
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 12:38:58 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 200ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    19:         <div class="container relative">
+    20:           <div class="navbar-header">
+    21:             <a class="navbar-logo" href="/">
+    22:               <%= image_tag('logo.png') %>
+    23:             </a>
+    24:    
+    25:             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___467084752471138551_69970526326780'
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 12:39:40 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    19:         <div class="container relative">
+    20:           <div class="navbar-header">
+    21:             <a class="navbar-logo" href="/">
+    22:               <%= image_tag('logo.png') %>
+    23:             </a>
+    24:    
+    25:             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___467084752471138551_69970622414780'
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-03-09 12:43:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (56.8ms)
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    19:         <div class="container relative">
+    20:           <div class="navbar-header">
+    21:             <a class="navbar-logo" href="/">
+    22:               <%= image_tag('logo.png') %>
+    23:             </a>
+    24:    
+    25:             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___467084752471138551_69970529989360'
+Started GET "/users/sign_up" for 10.0.2.2 at 2020-03-09 12:47:34 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (87.0ms)
+Completed 200 OK in 1198ms (Views: 1168.4ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 12:55:21 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 684ms (ActiveRecord: 7.9ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    19:         <div class="container relative">
+    20:           <div class="navbar-header">
+    21:             <a class="navbar-logo" href="/">
+    22:               <%= image_tag('logo.png') %>
+    23:             </a>
+    24:    
+    25:             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb__2272625987408559427_30698380'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 12:56:35 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 545ms (ActiveRecord: 14.6ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    19:         <div class="container relative">
+    20:           <div class="navbar-header">
+    21:             <a class="navbar-logo" href="/">
+    22:               <%= image_tag('logo.png') %>
+    23:             </a>
+    24:    
+    25:             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb__347930377447057976_44676040'
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 12:57:19 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 202ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "logo.png" is not present in the asset pipeline.):
+    19:         <div class="container relative">
+    20:           <div class="navbar-header">
+    21:             <a class="navbar-logo" href="/">
+    22:               <%= image_tag('logo.png') %>
+    23:             </a>
+    24:    
+    25:             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+  
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb__347930377447057976_70204461763420'
+Started GET "/users/sign_in" for 10.0.2.2 at 2020-03-09 13:01:30 +0000
+Cannot render console from 10.0.2.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/vagrant/.rbenv/versions/2.5.7/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2825ms (Views: 2789.7ms | ActiveRecord: 6.2ms)
+
+
