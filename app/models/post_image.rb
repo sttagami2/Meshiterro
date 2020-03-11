@@ -12,8 +12,8 @@ class PostImage < ApplicationRecord
   # favorited_by?メソッド
   def favorited_by?(user)
     favorites.where(user_id: user.id).exists?
+    # 「含まれる時 / 含まれない時」で表示と機能を分けるメソッド
   end
-  # 「含まれる時 / 含まれない時」で表示と機能を分けるメソッド
-
   # favorited_by?
+  
 end
